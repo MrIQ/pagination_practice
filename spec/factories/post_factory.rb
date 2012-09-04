@@ -1,5 +1,5 @@
 FactoryGirl.define do
-  factory :posts do
+  factory :post do
     name "name"
     content "content"
   end
