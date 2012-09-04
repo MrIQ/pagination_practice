@@ -1,5 +1,6 @@
 %h1 Posts
 #posts
+  = will_paginate @posts
   - @posts.each do |post|
     .product
       %h2 #{post.name}
