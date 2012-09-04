@@ -1,0 +1,9 @@
+%h1 Posts
+
+- if @posts.any?
+  = table_for(@efforts) do |t|
+    = t.data do
+      - t.cell(:name)
+      - t.cell(:content)
+- else
+  No posts found.
