@@ -1,9 +1,8 @@
 %h1 Posts
-
-- if @posts.any?
-  = table_for(@efforts) do |t|
-    = t.data do
-      - t.cell(:name)
-      - t.cell(:content)
-- else
-  No posts found.
+#posts
+  - @posts.each do |post|
+    .product
+      %h2 #{post.name}
+      .details
+        %h2 #{post.content}
+%p= link_to "New Post", new_post_path
